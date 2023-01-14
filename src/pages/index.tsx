@@ -1,9 +1,10 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import Link from 'next/link'
+
+import { Flex, Text } from '@chakra-ui/react'
 import axios from 'axios'
 import Container from 'components/Container'
-import Footer from 'components/Footer'
-import Header from 'components/Header'
 import Heading from 'components/Heading'
+import Layout from 'components/Layout'
 import Post, { PostProps } from 'components/Post'
 
 type HomeProps = {
@@ -12,9 +13,7 @@ type HomeProps = {
 
 export default function Home({ data }: HomeProps) {
   return (
-    <Box minH="100vh" bg="black">
-      <Header />
-
+    <Layout>
       <Container>
         <Flex
           as="main"
@@ -25,11 +24,18 @@ export default function Home({ data }: HomeProps) {
           gap={10}
         >
           <Heading title="Hey! I'm Marcos Mendes" />
-          <Text color="white" fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
-            {
-              "I'm a 22-year-old software engineer, focused in TypeScript, React, Next.js, Testing Ecosystem, and Open source projects."
-            }
-          </Text>
+
+          <Flex flexDir="column" gap={5} color="white">
+            <Text fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
+              {
+                "I'm a 22-year-old software engineer, focused in TypeScript, React, Next.js, Testing Ecosystem, and Open source projects."
+              }
+            </Text>
+
+            <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
+              <Link href="/about">Read more →</Link>
+            </Text>
+          </Flex>
         </Flex>
       </Container>
 
@@ -48,9 +54,7 @@ export default function Home({ data }: HomeProps) {
           ))}
         </Flex>
       </Container>
-
-      <Footer />
-    </Box>
+    </Layout>
   )
 }
 
