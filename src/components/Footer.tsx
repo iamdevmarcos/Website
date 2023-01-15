@@ -9,8 +9,9 @@ const Footer = () => (
     bottom="0"
     borderTop="0.1rem solid rgba(255, 255, 255, 0.1)"
     marginTop={50}
+    p="0 1rem"
   >
-    <Text color="white" fontSize="1.4rem">
+    <Text color="white" fontSize="1.4rem" textAlign="center">
       Made with 🤍 by Marcos Mendes and deployed at ▲ Vercel
     </Text>
   </Center>
