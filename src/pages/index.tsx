@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 import { Flex, Text } from '@chakra-ui/react'
-import axios from 'axios'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Layout from 'components/Layout'
 import Post, { PostProps } from 'components/Post'
+import { getArticlesByUsername } from 'services/api'
 
 type HomeProps = {
   data: PostProps[]
@@ -59,10 +59,7 @@ export default function Home({ data }: HomeProps) {
 }
 
 export async function getStaticProps() {
-  const API_URL = process.env.API_URL as string
-  const endpoint = `${API_URL}/articles?username=iamdevmarcos`
-
-  const { data } = await axios.get(endpoint)
+  const data = await getArticlesByUsername('iamdevmarcos')
 
   return {
     props: {
