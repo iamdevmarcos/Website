@@ -11,7 +11,7 @@ const Footer = () => (
     marginTop={50}
   >
     <Text color="white" fontSize="1.4rem">
-      Made with 🤍 by Marcos Mendes
+      Made with 🤍 by Marcos Mendes and deployed at ▲ Vercel
     </Text>
   </Center>
 )
