@@ -59,9 +59,10 @@ export default function Home({ data }: HomeProps) {
 }
 
 export async function getStaticProps() {
-  const { data } = await axios.get(
-    'https://dev.to/api/articles?username=iamdevmarcos'
-  )
+  const API_URL = process.env.API_URL as string
+  const endpoint = `${API_URL}/articles?username=iamdevmarcos`
+
+  const { data } = await axios.get(endpoint)
 
   return {
     props: {
