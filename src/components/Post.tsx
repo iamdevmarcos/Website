@@ -39,7 +39,7 @@ const Post = ({
         alt={title}
         w={{ base: '100%', md: '27rem' }}
         h="15rem"
-        borderRadius="0.8rem"
+        borderRadius="0.2rem"
       />
 
       <Flex
