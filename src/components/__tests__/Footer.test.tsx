@@ -8,7 +8,7 @@ describe('<Footer />', () => {
   it('should render correctly', () => {
     render(<Footer />)
     expect(
-      screen.getByText('Made with 🤍 by Marcos Mendes and deployed at ▲ Vercel')
+      screen.getByText(/made with 🤍 by marcos mendes deployed at ▲ vercel/i)
     ).toBeInTheDocument()
   })
 })

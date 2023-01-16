@@ -12,7 +12,7 @@ const Footer = () => (
     p="0 1rem"
   >
     <Text color="white" fontSize="1.4rem" textAlign="center">
-      Made with 🤍 by Marcos Mendes and deployed at ▲ Vercel
+      Made with 🤍 by Marcos Mendes <br /> Deployed at ▲ Vercel
     </Text>
   </Center>
 )
