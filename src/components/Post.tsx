@@ -25,12 +25,13 @@ const Post = ({
     justifyContent="flex-start"
     gap={10}
     color="white"
-    border="0.1rem solid transparent"
-    borderRadius="0.8rem"
+    border="0.2rem solid transparent"
+    borderRadius="0.5rem"
+    transition="all ease-in 0.2s"
     _hover={{
       textDecoration: 'none',
       borderColor: 'white',
-      cursor: 'default'
+      padding: '10px'
     }}
   >
     <Flex gap={10} flexDir={{ base: 'column', md: 'row' }}>
@@ -71,7 +72,7 @@ const Post = ({
         <Text
           fontSize={{ base: '2rem', md: '2.4rem' }}
           fontWeight="bold"
-          pb={{ base: 5, md: 10 }}
+          pb={{ base: 5, md: 8 }}
         >
           {title}
         </Text>
