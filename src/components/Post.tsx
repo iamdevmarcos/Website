@@ -3,7 +3,7 @@ import { Flex, Image, Link, Text } from '@chakra-ui/react'
 export type PostProps = {
   id: number
   canonical_url: string
-  cover_image: string
+  cover_image?: string
   reading_time_minutes: number
   tag_list: string[]
   title: string
@@ -36,7 +36,7 @@ const Post = ({
   >
     <Flex gap={10} flexDir={{ base: 'column', md: 'row' }}>
       <Image
-        src={cover_image}
+        src={cover_image ?? '/assets/defaultPostImage.jpg'}
         alt={title}
         w={{ base: '100%', md: '27rem' }}
         h="15rem"
