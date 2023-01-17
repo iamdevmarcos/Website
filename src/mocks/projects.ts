@@ -23,6 +23,13 @@ export const projectsMock: ProjectProps[] = [
     npmLink: 'https://www.npmjs.com/package/react-screen-size-helper'
   },
   {
+    name: 'MyLinks',
+    description:
+      'technologist A simple website to organize my links, fully inspired in Linktree',
+    githubLink: 'https://github.com/iamdevmarcos/MyLinks',
+    previewLink: 'https://linktree-iamdevmarcos.vercel.app/'
+  },
+  {
     name: 'MyNotes - Android App',
     description:
       'A Notes app, created in React-Native that provides better personal organization.',
