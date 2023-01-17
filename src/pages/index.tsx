@@ -5,13 +5,16 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Layout from 'components/Layout'
 import Post, { PostProps } from 'components/Post'
-import { getArticlesByUsername } from 'services/api'
+import Project, { ProjectProps } from 'components/Project'
+import { projectsMock } from 'mocks/projects'
+import * as api from 'services/api'
 
-type HomeProps = {
-  data: PostProps[]
+export type HomeProps = {
+  posts: PostProps[]
+  personalProjects: ProjectProps[]
 }
 
-export default function Home({ data }: HomeProps) {
+export default function Home({ posts, personalProjects }: HomeProps) {
   return (
     <Layout>
       <Container>
@@ -49,8 +52,31 @@ export default function Home({ data }: HomeProps) {
           gap={10}
         >
           <Heading title="Blog Posts and Articles" />
-          {data.map((item) => (
+          {posts.map((item) => (
             <Post {...item} key={item.id} />
+          ))}
+        </Flex>
+      </Container>
+
+      <Container>
+        <Flex
+          as="section"
+          aria-label="Blog Posts and Articles"
+          mt={{ base: '6rem', sm: '8rem' }}
+          flexDir="column"
+          justifyContent="flex-start"
+          gap={10}
+        >
+          <Heading title="Personal Projects" />
+          {personalProjects.map((item, index) => (
+            <Project
+              key={index}
+              name={item.name}
+              description={item.description}
+              githubLink={item.githubLink}
+              npmLink={item.npmLink}
+              previewLink={item.previewLink}
+            />
           ))}
         </Flex>
       </Container>
@@ -59,11 +85,12 @@ export default function Home({ data }: HomeProps) {
 }
 
 export async function getStaticProps() {
-  const data = await getArticlesByUsername('iamdevmarcos')
+  const posts = await api.getPostsByUsername('iamdevmarcos')
 
   return {
     props: {
-      data
+      posts,
+      personalProjects: projectsMock
     },
     revalidate: 60
   }
