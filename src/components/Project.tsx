@@ -33,9 +33,25 @@ const Project = ({
       </Text>
 
       <Flex gap={5} flexWrap="wrap">
-        {!!githubLink && <ProjectLabel title="Github" link={githubLink} />}
-        {!!npmLink && <ProjectLabel title="NPM" link={npmLink} />}
-        {!!previewLink && <ProjectLabel title="Preview" link={previewLink} />}
+        {!!githubLink && (
+          <ProjectLabel
+            title="Github"
+            link={githubLink}
+            ariaLabel="Github Link"
+          />
+        )}
+
+        {!!npmLink && (
+          <ProjectLabel title="NPM" link={npmLink} ariaLabel="NPM Link" />
+        )}
+
+        {!!previewLink && (
+          <ProjectLabel
+            title="Preview"
+            link={previewLink}
+            ariaLabel="Preview Link"
+          />
+        )}
       </Flex>
     </Flex>
   )

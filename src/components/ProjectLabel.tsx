@@ -3,11 +3,13 @@ import { Link, Text } from '@chakra-ui/react'
 export type ProjectLabelProps = {
   title: string
   link: string
+  ariaLabel: string
 }
 
-const ProjectLabel = ({ title, link }: ProjectLabelProps) => (
+const ProjectLabel = ({ title, link, ariaLabel }: ProjectLabelProps) => (
   <Link
     href={link}
+    aria-label={ariaLabel}
     isExternal
     background="white"
     border="0.1rem solid black"
