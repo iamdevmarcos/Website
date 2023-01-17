@@ -9,13 +9,15 @@ const Header = () => (
   <HStack
     position="sticky"
     top="0"
-    bg="#0E0E0E"
+    bg="rgba(14, 14, 14, 0.8)"
     w="100%"
     h="6.5rem"
     p="0 3rem"
     borderBottom="0.1rem solid rgba(255, 255, 255, 0.1)"
     alignItems="center"
     justifyContent="space-between"
+    backdropFilter="auto"
+    backdropBlur="10px"
   >
     <Logo />
 
