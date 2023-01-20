@@ -21,8 +21,6 @@ export default function Home() {
   if (isLoading) return null
   if (isError) throw new Error('Ops! Something went wrong...')
 
-  console.log(isLoading)
-
   return (
     <Layout>
       <Container>
