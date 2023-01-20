@@ -1,6 +1,6 @@
 import type { ProjectProps } from 'components/Project'
 
-export const projectsMock: ProjectProps[] = [
+export const personalProjects: ProjectProps[] = [
   {
     name: 'Next.js Boilerplate',
     description:

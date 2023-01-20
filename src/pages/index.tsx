@@ -1,3 +1,5 @@
+import { useQuery } from 'react-query'
+
 import Link from 'next/link'
 
 import { Flex, Text } from '@chakra-ui/react'
@@ -5,16 +7,22 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Layout from 'components/Layout'
 import Post, { PostProps } from 'components/Post'
-import Project, { ProjectProps } from 'components/Project'
-import { projectsMock } from 'mocks/projects'
-import * as api from 'services/api'
+import Project from 'components/Project'
+import { personalProjects } from 'mocks/projects'
+import { getPostsByUsername } from 'services/api'
 
-export type HomeProps = {
-  posts: PostProps[]
-  personalProjects: ProjectProps[]
-}
+export default function Home() {
+  const {
+    isLoading,
+    isError,
+    data: posts
+  } = useQuery('posts', getPostsByUsername)
 
-export default function Home({ posts, personalProjects }: HomeProps) {
+  if (isLoading) return null
+  if (isError) throw new Error('Ops! Something went wrong...')
+
+  console.log(isLoading)
+
   return (
     <Layout>
       <Container>
@@ -52,7 +60,7 @@ export default function Home({ posts, personalProjects }: HomeProps) {
           gap={10}
         >
           <Heading title="Blog Posts and Articles" />
-          {posts.map((item) => (
+          {posts.map((item: PostProps) => (
             <Post {...item} key={item.id} />
           ))}
         </Flex>
@@ -82,16 +90,4 @@ export default function Home({ posts, personalProjects }: HomeProps) {
       </Container>
     </Layout>
   )
-}
-
-export async function getStaticProps() {
-  const posts = await api.getPostsByUsername('iamdevmarcos')
-
-  return {
-    props: {
-      posts,
-      personalProjects: projectsMock
-    },
-    revalidate: 60
-  }
 }
