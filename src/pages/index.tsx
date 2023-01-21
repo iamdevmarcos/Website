@@ -6,6 +6,7 @@ import { Flex, Text, Link as ChakraLink } from '@chakra-ui/react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Layout from 'components/Layout'
+import Loading from 'components/Loading'
 import Post, { PostProps } from 'components/Post'
 import Project from 'components/Project'
 import { personalProjects } from 'mocks/projects'
@@ -18,7 +19,7 @@ export default function Home() {
     data: posts
   } = useQuery('posts', getPostsByUsername)
 
-  if (isLoading) return null
+  if (isLoading) return <Loading />
   if (isError) throw new Error('Ops! Something went wrong...')
 
   return (
