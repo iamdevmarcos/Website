@@ -2,7 +2,7 @@ import { useQuery } from 'react-query'
 
 import Link from 'next/link'
 
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, Link as ChakraLink } from '@chakra-ui/react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Layout from 'components/Layout'
@@ -39,6 +39,19 @@ export default function Home() {
               {
                 "I'm a 22-year-old software engineer, focused in TypeScript, React, Next.js, Testing Ecosystem, and Open source projects."
               }
+            </Text>
+
+            <Text fontSize={{ base: '1.4rem', sm: '1.5rem' }}>
+              P.S. this website is open-source and available on{' '}
+              <ChakraLink
+                href="https://github.com/iamdevmarcos/my-personal-website"
+                isExternal
+                fontWeight="bold"
+                textDecoration="underline"
+                textUnderlineOffset={3}
+              >
+                Github.
+              </ChakraLink>
             </Text>
 
             <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
