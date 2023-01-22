@@ -21,9 +21,10 @@ function App({ Component, pageProps }: AppProps) {
 
       <Head>
         <title>Marcos Mendes</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
         <meta name="description" content="My personal website" />
       </Head>
 
