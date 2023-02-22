@@ -33,9 +33,8 @@ export default function Home() {
 
           <Flex flexDir="column" gap={5} color="white">
             <Text fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
-              {
-                "I'm a 22-year-old software engineer, focused in TypeScript, React, Next.js, Testing Ecosystem, and Open source projects."
-              }
+              I’m a 22-year-old software engineer, focused in TypeScript, React,
+              Next.js, iOS Development with Swift, and open source projects.
             </Text>
 
             <Text fontSize={{ base: '1.4rem', sm: '1.5rem' }}>

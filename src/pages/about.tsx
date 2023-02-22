@@ -61,9 +61,9 @@ export default function About() {
             </Paragraph>
 
             <Paragraph>
-              {
-                'I’m a great team player and communicator, I love challenges and problem solving, thinking analytically and valuing code quality and user experience.'
-              }
+              I’m a great team player and communicator, I love challenges and
+              problem solving, thinking analytically and valuing code quality
+              and user experience.
             </Paragraph>
 
             <Paragraph>
