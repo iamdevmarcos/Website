@@ -53,19 +53,29 @@ export default function About() {
             </Flex>
 
             <Paragraph>
-              I am enthusiastic about Software Testing and Quality Deliveries
-              and passionate about creating complete and amazing user
-              Interfaces. ⚡️👨🏻‍💻
+              I’m a creative developer with a passion for good design and
+              intuitive, user friendly interfaces. I love working on the front
+              end, whether that’s creating a beautiful and performant mobile
+              apps or using React and TypeScript to create interactive and
+              responsive web apps.
             </Paragraph>
+
             <Paragraph>
               {
-                "I'm a great team player and communicator, I love challenges and problem solving, thinking analytically and valuing code quality and user experience."
+                'I’m a great team player and communicator, I love challenges and problem solving, thinking analytically and valuing code quality and user experience.'
               }
             </Paragraph>
+
+            <Paragraph>
+              Usability and design are always on my mind, even when writing
+              code: this should be usable, readable and beautiful too.
+            </Paragraph>
+
             <Paragraph>
               Creating and developing applications that are not only beautiful,
               but pleasant to use and really problem-solving.
             </Paragraph>
+
             <Paragraph>
               Always writing not just maintainable and scalable software, but
               also the readable code that will make the scalability and
