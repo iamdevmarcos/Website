@@ -25,9 +25,15 @@ export const personalProjects: ProjectProps[] = [
   {
     name: 'MyLinks',
     description:
-      'technologist A simple website to organize my links, fully inspired in Linktree',
+      'A simple website to organize my links, fully inspired in Linktree',
     githubLink: 'https://github.com/iamdevmarcos/MyLinks',
     previewLink: 'https://linktree-iamdevmarcos.vercel.app/'
+  },
+  {
+    name: 'iOS Projects 👨🏻‍💻',
+    description:
+      'A Simple repo that contains a list of my all iOS Apps and Projects',
+    githubLink: 'https://github.com/iamdevmarcos/iOSApps'
   },
   {
     name: 'MyNotes - Android App',
