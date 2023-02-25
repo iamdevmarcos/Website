@@ -70,4 +70,16 @@ describe('<Project />', () => {
     expect(screen.queryByLabelText(/github link/i)).not.toBeInTheDocument()
     expect(screen.queryByLabelText(/npm link/i)).not.toBeInTheDocument()
   })
+
+  it('should render a thumbnail correctly', () => {
+    render(
+      <Project {...props} thumbnail="https://github.com/iamdevmarcos.png" />
+    )
+
+    expect(screen.getByRole('img', { name: props.name })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: props.name })).toHaveProperty(
+      'src',
+      'https://github.com/iamdevmarcos.png'
+    )
+  })
 })

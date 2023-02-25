@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Flex, Text, Link as ChakraLink } from '@chakra-ui/react'
 import { Loading, Layout, Container, Heading, Project, Post } from 'components'
 import type { PostProps } from 'components/Post'
-import { personalProjects } from 'mocks/projects'
+import { contributedProjects, personalProjects } from 'mocks/projects'
 import { getPostsByUsername } from 'services/api'
 
 export default function Home() {
@@ -93,6 +93,38 @@ export default function Home() {
               previewLink={item.previewLink}
             />
           ))}
+        </Flex>
+      </Container>
+
+      <Container>
+        <Flex
+          as="section"
+          aria-label="Blog Posts and Articles"
+          mt={{ base: '6rem', sm: '8rem' }}
+          flexDir="column"
+          justifyContent="flex-start"
+          gap={10}
+        >
+          <Heading title="Contributions to Open Source Projects" />
+
+          {contributedProjects.map(
+            ({ name, description, thumbnail, githubLink }, index) => (
+              <ChakraLink
+                key={index}
+                href={githubLink}
+                isExternal
+                _hover={{
+                  opacity: '0.7'
+                }}
+              >
+                <Project
+                  name={name}
+                  description={description}
+                  thumbnail={thumbnail}
+                />
+              </ChakraLink>
+            )
+          )}
         </Flex>
       </Container>
     </Layout>

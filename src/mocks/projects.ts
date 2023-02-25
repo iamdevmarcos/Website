@@ -51,3 +51,52 @@ export const personalProjects: ProjectProps[] = [
     previewLink: 'https://macos-iamdevmarcos.vercel.app/'
   }
 ]
+
+export const contributedProjects: ProjectProps[] = [
+  {
+    name: 'Chakra UI',
+    description:
+      'Building tools that help you ship accessible websites and apps with speed ⚡️',
+    thumbnail: 'https://github.com/chakra-ui.png',
+    githubLink: 'https://github.com/chakra-ui'
+  },
+  {
+    name: 'TanStack',
+    description: 'Open source software for building better UI and UX',
+    thumbnail: 'https://github.com/TanStack.png',
+    githubLink: 'https://github.com/TanStack'
+  },
+  {
+    name: 'Styled Components',
+    description:
+      'Use the best bits of ES6 and CSS to style your apps without stress 💅',
+    thumbnail: 'https://github.com/styled-components.png',
+    githubLink: 'https://github.com/styled-components'
+  },
+  {
+    name: 'Ryujinx',
+    description: 'Experimental Nintendo Switch Emulator written in C#',
+    thumbnail: 'https://github.com/Ryujinx.png',
+    githubLink: 'https://github.com/Ryujinx'
+  },
+  {
+    name: 'Tsuru',
+    description: 'Tsuru is an extensible open source Platform as a Service.',
+    thumbnail: 'https://github.com/tsuru.png',
+    githubLink: 'https://github.com/tsuru'
+  },
+  {
+    name: 'Primer',
+    description:
+      'Components, design guidelines, and tooling for GitHubs design system.',
+    thumbnail: 'https://github.com/primer.png',
+    githubLink: 'https://github.com/primer'
+  },
+  {
+    name: 'Tailwind Labs',
+    description:
+      'Creators of Tailwind CSS and Headless UI, and authors of Refactoring UI.',
+    thumbnail: 'https://github.com/tailwindlabs.png',
+    githubLink: 'https://github.com/tailwindlabs'
+  }
+]
