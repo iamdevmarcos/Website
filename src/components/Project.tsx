@@ -1,4 +1,4 @@
-import { Center, Flex, Text, Image } from '@chakra-ui/react'
+import { Center, Flex, Text, Image, useColorModeValue } from '@chakra-ui/react'
 
 import ProjectLabel from './ProjectLabel'
 
@@ -19,6 +19,11 @@ const Project = ({
   previewLink,
   thumbnail
 }: ProjectProps) => {
+  const colors = {
+    textColor: useColorModeValue('black', 'white'),
+    secondaryTextColor: useColorModeValue('#333', '#ccc')
+  }
+
   return (
     <Flex gap="2rem">
       {!!thumbnail && (
@@ -39,13 +44,18 @@ const Project = ({
         flexDir="column"
         alignItems="flex-start"
         justifyContent="space-around"
-        color="white"
+        color={colors.textColor}
       >
         <Text fontSize={{ base: '2rem', md: '2.4rem' }} fontWeight="bold">
           {name}
         </Text>
 
-        <Text fontSize="1.4rem" fontWeight="light" color="#ccc" mb={5}>
+        <Text
+          fontSize="1.4rem"
+          fontWeight="light"
+          color={colors.secondaryTextColor}
+          mb={5}
+        >
           {description}
         </Text>
 
