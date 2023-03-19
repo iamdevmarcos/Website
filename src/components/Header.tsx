@@ -4,6 +4,7 @@ import { HStack, useColorModeValue } from '@chakra-ui/react'
 
 import Logo from './Logo'
 import SocialLink from './SocialLink'
+import ToggleTheme from './ToggleTheme'
 
 const Header = () => {
   const colors = {
@@ -32,6 +33,8 @@ const Header = () => {
       <Logo />
 
       <HStack gap={5} aria-labelledby="Social Links">
+        <ToggleTheme />
+
         <SocialLink
           icon={AiFillLinkedin}
           href="https://www.linkedin.com/in/iamdevmarcos/"
