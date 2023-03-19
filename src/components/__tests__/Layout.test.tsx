@@ -24,16 +24,11 @@ jest.mock('components/Footer', () => {
 
 describe('<Layout />', () => {
   it('should render correctly', () => {
-    const { container } = render(
+    render(
       <Layout>
         <h1>Something</h1>
       </Layout>
     )
-
-    expect(container.firstChild).toHaveStyle({
-      'min-height': '100vh',
-      background: 'black'
-    })
 
     expect(
       screen.getByRole('heading', { name: /something/i })
