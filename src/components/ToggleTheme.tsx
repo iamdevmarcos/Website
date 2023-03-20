@@ -1,19 +1,23 @@
 import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
 
-import { useColorMode, Box, Icon } from '@chakra-ui/react'
+import { useColorMode, Icon, Button } from '@chakra-ui/react'
 
 const ToggleTheme = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const isLightMode = colorMode === 'light'
 
   return (
-    <Box onClick={() => toggleColorMode()}>
+    <Button
+      onClick={() => toggleColorMode()}
+      cursor="pointer"
+      aria-label="Toggle Theme Button"
+    >
       <Icon
         as={isLightMode ? BsFillMoonFill : BsFillSunFill}
         w="16px"
         h="16px"
       />
-    </Box>
+    </Button>
   )
 }
 
