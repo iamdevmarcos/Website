@@ -44,9 +44,23 @@ const Introduction = () => {
             </ChakraLink>
           </Text>
 
-          <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
-            <Link href="/about">Read more →</Link>
-          </Text>
+          <Flex
+            flexDir={{ base: 'column', md: 'row' }}
+            gap={{ base: '1rem', md: '2rem' }}
+          >
+            <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
+              <Link href="/about">Read more →</Link>
+            </Text>
+
+            <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
+              <ChakraLink
+                href="https://drive.google.com/file/d/1TRdBYXrghMMBjSODwkbh-02eEovljvBx/view?usp=sharing"
+                isExternal
+              >
+                Download CV
+              </ChakraLink>
+            </Text>
+          </Flex>
         </Flex>
       </Flex>
     </Container>

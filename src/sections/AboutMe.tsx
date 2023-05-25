@@ -107,6 +107,15 @@ const AboutMe = () => {
         >
           <ListItem>
             <ExternalLink
+              title="Download CV"
+              href={
+                'https://drive.google.com/file/d/1TRdBYXrghMMBjSODwkbh-02eEovljvBx/view?usp=sharing'
+              }
+            />
+          </ListItem>
+
+          <ListItem>
+            <ExternalLink
               title="Github"
               href="https://github.com/iamdevmarcos"
             />
