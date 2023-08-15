@@ -109,7 +109,7 @@ const AboutMe = () => {
             <ExternalLink
               title="Download CV"
               href={
-                'https://drive.google.com/file/d/1TRdBYXrghMMBjSODwkbh-02eEovljvBx/view?usp=sharing'
+                'https://drive.google.com/file/d/1hWs-t0VzzOvGrLkM7rnDBmFjFxswhG-z/view?usp=drive_link'
               }
             />
           </ListItem>
