@@ -51,15 +51,6 @@ const Introduction = () => {
             <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
               <Link href="/about">Read more →</Link>
             </Text>
-
-            <Text fontSize="1.5rem" color="#00CCFF" width="fit-content">
-              <ChakraLink
-                href="https://drive.google.com/file/d/1hWs-t0VzzOvGrLkM7rnDBmFjFxswhG-z/view?usp=drive_link"
-                isExternal
-              >
-                Download CV
-              </ChakraLink>
-            </Text>
           </Flex>
         </Flex>
       </Flex>

@@ -107,15 +107,6 @@ const AboutMe = () => {
         >
           <ListItem>
             <ExternalLink
-              title="Download CV"
-              href={
-                'https://drive.google.com/file/d/1hWs-t0VzzOvGrLkM7rnDBmFjFxswhG-z/view?usp=drive_link'
-              }
-            />
-          </ListItem>
-
-          <ListItem>
-            <ExternalLink
               title="Github"
               href="https://github.com/iamdevmarcos"
             />
@@ -131,7 +122,7 @@ const AboutMe = () => {
           <ListItem>
             <ExternalLink
               title="Instagram"
-              href="https://www.instagram.com/marcosdev.me/"
+              href="https://www.instagram.com/mendes.tsx"
             />
           </ListItem>
 
