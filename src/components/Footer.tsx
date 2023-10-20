@@ -1,4 +1,4 @@
-import { Center, Text, useColorModeValue } from '@chakra-ui/react'
+import { Center, Flex, Text, useColorModeValue } from '@chakra-ui/react'
 
 const Footer = () => {
   const colors = {
@@ -11,21 +11,23 @@ const Footer = () => {
   }
 
   return (
-    <Center
-      as="footer"
-      w="100%"
-      h="6.5rem"
-      bg={colors.bg}
-      bottom="0"
-      borderTop="0.1rem solid"
-      borderColor={colors.borderColor}
-      marginTop={50}
-      p="0 1rem"
-    >
-      <Text color={colors.textColor} fontSize="1.4rem" textAlign="center">
-        Made with 🤍 by Marcos Mendes <br /> Deployed at ▲ Vercel
-      </Text>
-    </Center>
+    <Flex mt={40}>
+      <Center
+        as="footer"
+        w="100%"
+        h="6.5rem"
+        bg={colors.bg}
+        borderTop="0.1rem solid"
+        borderColor={colors.borderColor}
+        p="0 1rem"
+        bottom="0"
+        position="absolute"
+      >
+        <Text color={colors.textColor} fontSize="1.4rem" textAlign="center">
+          Made with 🤍 by Marcos Mendes <br /> Deployed at ▲ Vercel
+        </Text>
+      </Center>
+    </Flex>
   )
 }
 
