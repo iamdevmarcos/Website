@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query'
 
 import { Flex } from '@chakra-ui/react'
-import { Container, Heading, Loading, Post } from 'components'
+import { Container, Loading, Post, Section } from 'components'
 import type { PostProps } from 'components/Post'
 import { getPostsByUsername } from 'services/api'
 
@@ -25,10 +25,11 @@ const BlogPosts = () => {
         justifyContent="flex-start"
         gap={10}
       >
-        <Heading title="Blog Posts and Articles" />
-        {posts.map((item: PostProps) => (
-          <Post {...item} key={item.id} />
-        ))}
+        <Section heading="Blog Posts and Articles">
+          {posts.map((item: PostProps) => (
+            <Post {...item} key={item.id} />
+          ))}
+        </Section>
       </Flex>
     </Container>
   )
