@@ -11,6 +11,10 @@ const ToggleTheme = () => {
       onClick={() => toggleColorMode()}
       cursor="pointer"
       aria-label="Toggle Theme Button"
+      bg="transparent"
+      _hover={{
+        background: 'transparent'
+      }}
     >
       <Icon
         as={isLightMode ? BsFillMoonFill : BsFillSunFill}
