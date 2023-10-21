@@ -21,7 +21,7 @@ const Footer = () => {
         borderColor={colors.borderColor}
         p="0 1rem"
         bottom="0"
-        position="absolute"
+        position="fixed"
       >
         <Text color={colors.textColor} fontSize="1.4rem" textAlign="center">
           Made with 🤍 by Marcos Mendes <br /> Deployed at ▲ Vercel
