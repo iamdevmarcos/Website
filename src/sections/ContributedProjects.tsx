@@ -11,6 +11,7 @@ const ContributedProjects = () => (
       flexDir="column"
       justifyContent="flex-start"
       gap={10}
+      pb={40}
     >
       <Section heading="Contributions to Open Source Projects">
         {contributedProjects.map(

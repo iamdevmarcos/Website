@@ -1,7 +1,7 @@
 import { Center, Flex, Text } from '@chakra-ui/react'
 
 const Footer = () => (
-  <Flex mt={40}>
+  <Flex mt={0}>
     <Center
       as="footer"
       w="100%"
@@ -11,7 +11,7 @@ const Footer = () => (
       borderColor="rgba(255, 255, 255, 0.1)"
       p="0 1rem"
       bottom="0"
-      position="fixed"
+      position="absolute"
     >
       <Text color="white" fontSize="1.4rem" textAlign="center">
         Made with 🤍 by Marcos Mendes <br /> Deployed at ▲ Vercel
