@@ -10,7 +10,8 @@
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch",
     "postinstall": "husky install",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.4.8",
