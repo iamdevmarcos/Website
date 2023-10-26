@@ -1,11 +1,8 @@
-import { QueryClientProvider } from 'react-query'
-
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import NextNProgress from 'nextjs-progressbar'
 
 import { ChakraProvider } from '@chakra-ui/react'
-import { queryClient } from 'services/queryClient'
 import theme from 'styles/theme'
 
 function App({ Component, pageProps }: AppProps) {
@@ -29,11 +26,9 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="My personal website" />
       </Head>
 
-      <QueryClientProvider client={queryClient}>
-        <ChakraProvider resetCSS theme={theme}>
-          <Component {...pageProps} />
-        </ChakraProvider>
-      </QueryClientProvider>
+      <ChakraProvider resetCSS theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }
