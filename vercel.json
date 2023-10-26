@@ -1,4 +1,4 @@
 {
   "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "npm run typecheck && next build && next export"
+  "buildCommand": "npm run typecheck && next build"
 }
