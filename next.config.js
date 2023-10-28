@@ -2,5 +2,13 @@
 const withTM = require('next-transpile-modules')(['react-icons'])
 
 module.exports = withTM({
-  swcMinify: true
+  swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media.graphassets.com'
+      }
+    ]
+  }
 })
