@@ -5,5 +5,11 @@ export const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
   headers: {
     authorization: `Bearer ${process.env.HYGRAPH_API_TOKEN}`
+  },
+  defaultOptions: {
+    query: {
+      fetchPolicy: 'no-cache',
+      errorPolicy: 'all'
+    }
   }
 })
