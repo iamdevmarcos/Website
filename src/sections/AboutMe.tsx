@@ -61,7 +61,6 @@ const AboutMe = () => (
       flexDir="column"
       justifyContent="flex-start"
       gap={10}
-      pb={40}
     >
       <Section heading="Links">
         <UnorderedList
