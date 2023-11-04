@@ -20,13 +20,14 @@ function App({ Component, pageProps }: AppProps) {
         />
 
         <Head>
-          <title>
-            Marcos Mendes - Software Engineer and Open Source Advocate
-          </title>
+          <title>Marcos Mendes ⚡️</title>
           <link rel="shortcut icon" href="/favicon.png" />
           <link rel="apple-touch-icon" href="/favicon.png" />
           <link rel="icon" type="image/x-icon" href="/favicon.png" />
-          <meta name="description" content="My personal website" />
+          <meta
+            name="description"
+            content="Marcos Mendes - Software Engineer and Open Source Advocate"
+          />
         </Head>
 
         <Component {...pageProps} />
