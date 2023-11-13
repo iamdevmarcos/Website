@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import NextNProgress from 'nextjs-progressbar'
+import { GeistSans } from 'geist/font'
 
 import { ApolloProvider } from '@apollo/client'
 import { ChakraProvider } from '@chakra-ui/react'
@@ -29,7 +30,9 @@ function App({ Component, pageProps }: AppProps) {
           <meta name="description" content="My personal website" />
         </Head>
 
-        <Component {...pageProps} />
+        <main className={GeistSans.className}>
+          <Component {...pageProps} />
+        </main>
       </ChakraProvider>
     </ApolloProvider>
   )
