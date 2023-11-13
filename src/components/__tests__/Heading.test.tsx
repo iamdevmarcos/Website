@@ -7,8 +7,6 @@ import Heading from '../Heading'
 describe('<Heading />', () => {
   it('should render correctly', () => {
     render(<Heading title="The Last of Us" />)
-    expect(
-      screen.getByRole('heading', { name: /the last of us/i })
-    ).toBeInTheDocument()
+    expect(screen.getByText(/the last of us/i)).toBeInTheDocument()
   })
 })

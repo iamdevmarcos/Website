@@ -11,11 +11,6 @@ const theme = extendTheme({
     global: {
       html: {
         fontSize: '62.5%'
-      },
-      body: {
-        background: 'black',
-        fontFamily:
-          "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
       }
     }
   }
