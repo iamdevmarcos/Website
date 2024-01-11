@@ -2,6 +2,7 @@ import {
   BlogPosts,
   ContributedProjects,
   Introduction,
+  Jobs,
   PersonalProjects
 } from 'sections'
 
@@ -16,6 +17,7 @@ export default function Home({ posts }: HomeProps) {
   return (
     <Layout>
       <Introduction />
+      <Jobs />
       <BlogPosts posts={posts} />
       <PersonalProjects />
       <ContributedProjects />
