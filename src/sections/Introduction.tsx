@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Flex, Text, Link as ChakraLink } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 import { Container, Heading } from 'components'
 
 const Introduction = () => (
@@ -20,19 +20,6 @@ const Introduction = () => (
           {
             "I'm a 23-year-old software engineer who enjoys writing about how things work. My focus it's TypeScript, React, Next.js, GraphQL, Java, Spring Boot, PostgreSQL, and contributing to open source projects."
           }
-        </Text>
-
-        <Text fontSize={{ base: '1.4rem', sm: '1.5rem' }}>
-          P.S. this website is open-source and available on{' '}
-          <ChakraLink
-            href="https://github.com/iamdevmarcos/my-personal-website"
-            isExternal
-            fontWeight="bold"
-            textDecoration="underline"
-            textUnderlineOffset={3}
-          >
-            Github.
-          </ChakraLink>
         </Text>
 
         <Flex
