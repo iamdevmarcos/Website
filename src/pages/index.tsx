@@ -3,7 +3,8 @@ import {
   ContributedProjects,
   Introduction,
   Jobs,
-  PersonalProjects
+  PersonalProjects,
+  Videos
 } from 'sections'
 
 import { Layout } from 'components'
@@ -18,6 +19,7 @@ export default function Home({ posts }: HomeProps) {
     <Layout>
       <Introduction />
       <Jobs />
+      <Videos />
       <BlogPosts posts={posts} />
       <PersonalProjects />
       <ContributedProjects />
