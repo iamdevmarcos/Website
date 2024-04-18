@@ -2,9 +2,9 @@ import { JobProps } from 'sections/Jobs'
 
 export const jobs: JobProps[] = [
   {
-    company: 'Sodexo (via Objective)',
+    company: 'Pluxee (former Sodexo)',
     companyPhoto:
-      'https://media.licdn.com/dms/image/D4E0BAQEJAlwSr9SZuQ/company-logo_200_200/0/1688338950177/sodexo_logo?e=1712793600&v=beta&t=AaILcEz7dmCxP4lb_yn-OqG9u-hhMm1uDpj9_9Jb0dc',
+      'https://play-lh.googleusercontent.com/4Ug5T6uYTbC-Q5RPU9I_kA3xXTznSjryg_qK3XuTRw-FpoPmH3g0xMHz_qbyvtpfe1E',
     companyLink: 'https://br.sodexo.com/home.html',
     date: 'Nov 2022 -> Present',
     locale: 'São Paulo, Brazil · Full Remote',
@@ -13,7 +13,7 @@ export const jobs: JobProps[] = [
   {
     company: 'Objective',
     companyPhoto:
-      'https://media.licdn.com/dms/image/C4E0BAQFWcdNXVCbZpQ/company-logo_200_200/0/1630628005291/objectivebr_logo?e=1712793600&v=beta&t=SYoee1cJZIo8gn0V-R8TM3lCXL5Nqrncx7oLtUt8ZVs',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_-4D22JnHNHybD5NoinrA7ORhHtf28bQgqlYAoOSBw84MFFJrtku5EmhYVoGlK5VGc_w&usqp=CAU',
     companyLink: 'https://www.objective.com.br/',
     date: 'Abr 2022 -> Nov 2022',
     locale: 'Maringá, Brazil · Full Remote',
@@ -22,7 +22,7 @@ export const jobs: JobProps[] = [
   {
     company: 'Freelancer.com',
     companyPhoto:
-      'https://media.licdn.com/dms/image/C560BAQEJe-MEhPTm7w/company-logo_200_200/0/1631379336837?e=1712793600&v=beta&t=570ENyiKH1JXQQW0SigJHmxORfogR3kU_a1R2CmyHI0',
+      'https://static.wixstatic.com/media/59e91f_ee70eaef9b0240acabc63e71df38955f~mv2.webp',
     companyLink: 'https://www.freelancer.com/',
     date: 'May 2018 -> Abr 2022',
     locale: 'Full Remote',
