@@ -20,7 +20,8 @@ const CTA = () => {
 
       <Link
         onClick={() => setIsExploding(true)}
-        href="mailto:marcosdev.me@gmail.com"
+        href="https://cal.com/marcosmendes/30min?user=marcosmendes"
+        isExternal
         _hover={{ textDecor: 'none', opacity: 0.6 }}
         display="flex"
         alignItems="center"
@@ -30,7 +31,7 @@ const CTA = () => {
         fontWeight="semibold"
         fontSize={{ base: '0.8rem', md: '1.2rem' }}
       >
-        <Text>let’s bring your project to the real world - contact me</Text>
+        <Text>let’s bring your project to the real world - or hire me</Text>
         <Icon as={SiMinutemailer} display={{ base: 'none', md: 'block' }} />
       </Link>
     </Flex>
