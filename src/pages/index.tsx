@@ -14,27 +14,15 @@ export type HomeProps = {
   posts: PostProps[]
 }
 
-export default function Home({ posts }: HomeProps) {
+export default function Home() {
   return (
     <Layout>
       <Introduction />
       <Jobs />
       <Videos />
-      <BlogPosts posts={posts} />
+      <BlogPosts />
       <PersonalProjects />
       <ContributedProjects />
     </Layout>
   )
-}
-
-export async function getServerSideProps() {
-  const posts = await fetch(
-    `${process.env.DEV_TO_API_URL}/articles?username=iamdevmarcos`
-  )
-
-  return {
-    props: {
-      posts: await posts.json()
-    }
-  }
 }
