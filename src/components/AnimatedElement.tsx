@@ -7,7 +7,7 @@ const AnimatedElement: React.FC = () => {
   const [position, setPosition] = useState({ top: 0, left: 0 })
   const [visible, setVisible] = useState(true)
 
-  const secondsToReappear = 5000
+  const secondsToReappear = 30000
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
