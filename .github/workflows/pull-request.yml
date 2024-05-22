@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -21,7 +21,11 @@ jobs:
         run: npm run lint
 
       - name: Run Jest tests
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         run: npm run test
 
       - name: Run Build
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         run: npm run build
