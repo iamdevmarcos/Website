@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -24,4 +24,8 @@ jobs:
         run: npm run test
 
       - name: Run Build
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          RAPIDAPI_YOUTUBE_HOST: ${{ secrets.RAPIDAPI_YOUTUBE_HOST }}
+          RAPIDAPI_YOUTUBE_CHANNEL_ID: ${{ secrets.RAPIDAPI_YOUTUBE_CHANNEL_ID }}
         run: npm run build
