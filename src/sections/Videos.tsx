@@ -1,8 +1,8 @@
 import { AspectRatio, Flex } from '@chakra-ui/react'
 import { Container, Section } from 'components'
-import videos from 'mocks/videos'
+import { YoutubeVideo } from 'types/YoutubeVideo'
 
-const Videos = () => {
+const Videos = ({ videos }: { videos: YoutubeVideo[] }) => {
   return (
     <Container>
       <Flex
@@ -15,11 +15,11 @@ const Videos = () => {
       >
         <Section heading="Tutorials and Live Coding">
           <Flex flexDir="column" gap={{ base: '2.4rem', md: '6.4rem' }}>
-            {videos.map(({ title, videoId }) => (
-              <AspectRatio key={videoId} maxW="100%" maxH="45rem" ratio={1}>
+            {videos.map(({ title, video_id }) => (
+              <AspectRatio key={video_id} maxW="100%" maxH="45rem" ratio={1}>
                 <iframe
                   title={title}
-                  src={`https://www.youtube.com/embed/${videoId}`}
+                  src={`https://www.youtube.com/embed/${video_id}`}
                   allowFullScreen
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                 />
