@@ -31,7 +31,7 @@ export const jobs: JobProps[] = [
   {
     company: 'Marcos Mendes',
     companyPhoto:
-      'https://www.dailypaws.com/thmb/D4RelXrMDy3y5TaBPBhxQ2Wl-Wg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/orange-abyssinian-1223658583-447903ecfcb742f9a6e969a16f7ead6b.jpg',
+      'https://m.media-amazon.com/images/I/61UW0HY+UVL._AC_SY1000_.jpg',
     companyLink: 'https://github.com/iamdevmarcos',
     date: 'May 2017 -> Present',
     locale: 'Natal, Brazil · Full Remote',
