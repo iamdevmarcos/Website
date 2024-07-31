@@ -75,7 +75,7 @@ const NewJob = ({
               flexDir="column"
               fontSize={{ base: '14px', md: '16px' }}
               color="white"
-              fontWeight="200"
+              fontWeight="400"
             >
               <Text>{date}</Text>
             </Flex>
