@@ -13,8 +13,13 @@ const Footer = () => (
       bottom="0"
       position="absolute"
     >
-      <Text color="white" fontSize="1.4rem" textAlign="center">
-        Made with 🤍 by Marcos Mendes <br /> Deployed at ▲ Vercel
+      <Text
+        color="white"
+        fontSize="1.4rem"
+        textAlign="center"
+        letterSpacing="-0.8px"
+      >
+        Engineered with passion ▲ <br /> by Marcos Mendes
       </Text>
     </Center>
   </Flex>

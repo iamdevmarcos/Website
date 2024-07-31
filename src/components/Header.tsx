@@ -22,6 +22,7 @@ const Header = () => (
       justifyContent="space-between"
       backdropFilter="auto"
       backdropBlur="10px"
+      letterSpacing="-0.8px"
     >
       <Logo />
 

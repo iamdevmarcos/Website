@@ -105,12 +105,12 @@ const AboutMe = () => (
 export default AboutMe
 
 const paragraphs = [
-  "I'm a software engineer, and I have a passion for unraveling how things work. 🕵️‍♂️ My focus is on technologies like TypeScript, React, Next.js, Java, Spring Boot, and PostgreSQL.",
-  '💻💡 I love delving into the inner workings of applications, combining my love for writing code with an insatiable curiosity about the underlying mechanics of these technologies. 🌟 My experience in these fields makes me a valuable asset to any development team.',
-  'I have the ability to translate complex concepts into practical and effective solutions. 🚀 My problem-solving approach is rooted in continuous learning, which allows me to tackle development challenges with confidence and innovation.',
-  'I’m a creative developer with a passion for good design and intuitive, user-friendly interfaces. 💡🎨 I love working on the front end, whether that’s creating beautiful and performant mobile apps 📱🚀 or using React and TypeScript to create interactive and responsive web apps. 🌐👨‍💻',
-  'I’m a great team player and communicator, 🤝 I love challenges and problem-solving, 🧩 thinking analytically 🤔, and valuing code quality 🚀 and user experience. 🌟',
-  'Usability and design are always on my mind, even when writing code: this should be usable, readable, and beautiful too. 💡📝🎨',
-  'Creating and developing applications that are not only beautiful, but pleasant to use and really problem-solving. 🌟📲💡',
-  'My hobbies are 📖 reading, 🏃‍♂️ running, and playing on my PlayStation 5 🎮.'
+  "I'm a software engineer, and I have a passion for unraveling how things work. My focus is on technologies like TypeScript, React, Next.js, Node.js, Java, Spring Boot, and PostgreSQL.",
+  'I love delving into the inner workings of applications, combining my love for writing code with an insatiable curiosity about the underlying mechanics of these technologies. My experience in these fields makes me a valuable asset to any development team.',
+  'I have the ability to translate complex concepts into practical and effective solutions. My problem-solving approach is rooted in continuous learning, which allows me to tackle development challenges with confidence and innovation.',
+  'I’m a creative developer with a passion for good design and intuitive, user-friendly interfaces. I love working on the front end, whether that’s creating beautiful and performant mobile apps or using React and TypeScript to create interactive and responsive web apps.',
+  'I’m a great team player and communicator, I love challenges and problem-solving, thinking analytically, and valuing code quality and user experience.',
+  'Usability and design are always on my mind, even when writing code: this should be usable, readable, and beautiful too.',
+  'Creating and developing applications that are not only beautiful, but pleasant to use and really problem-solving.',
+  'My hobbies are reading, running, and playing on my PlayStation 5.'
 ]

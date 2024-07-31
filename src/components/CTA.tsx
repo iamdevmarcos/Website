@@ -11,7 +11,7 @@ const CTA = () => {
     <Flex
       alignItems="center"
       justifyContent="center"
-      bg="#DEBDFF"
+      bg="#fff"
       color="#101828"
       textTransform="uppercase"
       h="3.8rem"
@@ -31,7 +31,9 @@ const CTA = () => {
         fontWeight="semibold"
         fontSize={{ base: '0.8rem', md: '1.2rem' }}
       >
-        <Text>let’s bring your project to the real world - or hire me</Text>
+        <Text letterSpacing="-0.8px">
+          let’s bring your project to the real world - or hire me
+        </Text>
         <Icon as={SiMinutemailer} display={{ base: 'none', md: 'block' }} />
       </Link>
     </Flex>
