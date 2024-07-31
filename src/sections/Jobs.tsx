@@ -1,4 +1,4 @@
-import { Center, Flex, Image, Link, Text } from '@chakra-ui/react'
+import { Flex, Image, Link, Text } from '@chakra-ui/react'
 import { Container, Section } from 'components'
 import { jobs } from 'mocks/jobs'
 
@@ -8,32 +8,15 @@ const Jobs = () => {
       <Flex
         as="section"
         aria-label="Blog Posts and Articles"
-        mt={{ base: '6rem', sm: '8rem' }}
+        mt="6rem"
         flexDir="column"
         justifyContent="flex-start"
         gap={10}
       >
         <Section heading="Experience">
-          {jobs.map(
-            ({
-              company,
-              companyPhoto,
-              companyLink,
-              date,
-              locale,
-              position
-            }) => (
-              <Job
-                key={`Job - ${position}`}
-                company={company}
-                companyPhoto={companyPhoto}
-                companyLink={companyLink}
-                locale={locale}
-                date={date}
-                position={position}
-              />
-            )
-          )}
+          {jobs.map((job, jobIndex) => (
+            <NewJob key={`Job - ${jobIndex}`} {...job} />
+          ))}
         </Section>
       </Flex>
     </Container>
@@ -42,95 +25,81 @@ const Jobs = () => {
 
 export default Jobs
 
-export type JobProps = {
-  company: string
-  companyPhoto: string
-  companyLink: string
-  locale: string
-  date: string
-  position: string
-}
-
-const Job = ({
+const NewJob = ({
   company,
   companyPhoto,
   companyLink,
   date,
-  locale,
+  description,
   position
 }: JobProps) => {
   return (
-    <Flex w="100%" gap="16px" alignItems="center">
-      <Link isExternal href={companyLink}>
-        <Center
-          w="8rem"
-          h="8rem"
-          p="6px"
-          border={{ base: 'none', lg: '0.1rem solid gray' }}
-          borderRadius="50%"
-          display={{ base: 'none', lg: 'block' }}
-          cursor="pointer"
-        >
-          <Image borderRadius="50%" src={companyPhoto} alt={company} />
-        </Center>
-      </Link>
-
-      <Flex flexDir="column" gap={{ base: '8px', lg: '4px' }}>
+    <Link
+      isExternal
+      href={companyLink}
+      style={{ textDecoration: 'none' }}
+      border="1px solid #71717a"
+      borderRadius="8px"
+      _focusVisible={{ bg: '#27272a', borderColor: '#27272a' }}
+      _hover={{
+        bg: '#27272a',
+        borderColor: '#27272a'
+      }}
+    >
+      <Flex w="100%" flexDir="column" p="20px" gap="20px">
         <Flex
-          gap={{ base: '2px', lg: '8px' }}
-          fontSize={{ base: '2rem', md: '2.4rem' }}
-          fontWeight="bold"
-          alignItems={{ base: 'flex-start', md: 'center' }}
-          color="white"
+          flex="1"
           flexDir={{ base: 'column', md: 'row' }}
+          justifyContent="space-between"
+          alignItems={{ base: 'flex-start', md: 'center' }}
         >
-          <Text>{position}</Text>
-          <Flex
-            w="4px"
-            h="4px"
-            bg="white"
-            borderRadius="50%"
-            display={{ base: 'none', md: 'block' }}
-          />
-          <Link isExternal href={companyLink}>
-            <Text
-              fontSize={{ base: '1.2rem', md: '1.8rem' }}
-              fontWeight="light"
-            >
-              {company}
-            </Text>
-          </Link>
-        </Flex>
+          <Flex gap="20px" flexDir={{ base: 'column', md: 'row' }}>
+            <Image
+              borderRadius="50%"
+              src={companyPhoto}
+              alt={company}
+              w="32px"
+              h="32px"
+            />
 
-        <Flex
-          flexDir={{ base: 'column', md: 'row' }}
-          alignItems={{ base: 'flex-start', md: 'center' }}
-          gap="8px"
-        >
-          <Flex
-            background="white"
-            border="0.1rem solid black"
-            p="0 1rem"
-            borderRadius="0.5rem"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            color="black"
-          >
             <Text
-              fontSize="1.4rem"
-              fontWeight="bold"
-              textTransform="capitalize"
+              fontSize={{ base: '16px', md: '20px' }}
+              color="white"
+              fontWeight="600"
             >
-              {date}
+              {position} at {company}
             </Text>
           </Flex>
-
-          <Text fontSize="1.4rem" fontWeight="light" color="#ccc">
-            {locale}
-          </Text>
+          <Flex>
+            <Flex
+              flexDir="column"
+              fontSize={{ base: '14px', md: '16px' }}
+              color="white"
+              fontWeight="200"
+            >
+              <Text>{date}</Text>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex flex="1">
+          <Text
+            fontSize={{ base: '14px', md: '16px' }}
+            color="#D4D4D8"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
         </Flex>
       </Flex>
-    </Flex>
+    </Link>
   )
 }
+
+export type JobProps = Record<
+  | 'company'
+  | 'companyPhoto'
+  | 'companyLink'
+  | 'locale'
+  | 'date'
+  | 'position'
+  | 'description',
+  string
+>
