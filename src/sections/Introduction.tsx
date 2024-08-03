@@ -18,7 +18,7 @@ const Introduction = () => (
       <Flex flexDir="column" gap={5} color="white">
         <Text fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
           {
-            'I’m a 24-year-old Software Engineer specializing in building high-performance web applications, APIs, and mobile apps using TypeScript, React, Node.js, and Swift.'
+            'I’m a 24-year-old Software Engineer specializing in building high-performance web applications, APIs, and mobile apps using TypeScript, React, Node.js, Java, Spring Boot, AWS, Azure DevOps, and Mobile (React Native, Swift).'
           }
         </Text>
 

@@ -105,7 +105,7 @@ const AboutMe = () => (
 export default AboutMe
 
 const paragraphs = [
-  "I'm a software engineer, and I have a passion for unraveling how things work. My focus is on technologies like TypeScript, React, Next.js, Node.js, Java, Spring Boot, and PostgreSQL.",
+  "I'm a software engineer, and I have a passion for unraveling how things work. My focus is on technologies like TypeScript, React, Node.js, Java, Spring Boot, AWS, Azure DevOps, and Mobile (React Native, Swift).",
   'I love delving into the inner workings of applications, combining my love for writing code with an insatiable curiosity about the underlying mechanics of these technologies. My experience in these fields makes me a valuable asset to any development team.',
   'I have the ability to translate complex concepts into practical and effective solutions. My problem-solving approach is rooted in continuous learning, which allows me to tackle development challenges with confidence and innovation.',
   'I’m a creative developer with a passion for good design and intuitive, user-friendly interfaces. I love working on the front end, whether that’s creating beautiful and performant mobile apps or using React and TypeScript to create interactive and responsive web apps.',
