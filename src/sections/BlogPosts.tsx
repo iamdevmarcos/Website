@@ -2,12 +2,15 @@ import { Flex } from '@chakra-ui/react'
 import { Container, Post, Section } from 'components'
 import { PostProps } from 'components/Post'
 import { usePosts } from 'libs/devto/fetch'
+import { mockArticles } from 'mocks/articles'
 
 const BlogPosts = () => {
   const { data: posts, error, isLoading } = usePosts()
 
   if (isLoading) return <div>Loading...</div>
   if (error) return <div>Error loading posts!</div>
+
+  const allPosts = [...mockArticles, ...posts]
 
   return (
     <Container>
@@ -20,7 +23,7 @@ const BlogPosts = () => {
         gap={10}
       >
         <Section heading="Blog Posts and Articles">
-          {posts.map((item: PostProps) => (
+          {allPosts.map((item: PostProps) => (
             <Post {...item} key={item.id} />
           ))}
         </Section>
