@@ -10,7 +10,7 @@ const theme = extendTheme({
   styles: {
     global: {
       html: {
-        fontSize: '62.5%'
+        fontSize: '72%'
       }
     }
   }
