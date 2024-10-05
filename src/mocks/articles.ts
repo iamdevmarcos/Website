@@ -16,7 +16,7 @@ export const mockArticles: PostProps[] = [
     title: 'Unraveling Node.js: Concepts and how it works (Portuguese 🇧🇷)',
     canonical_url: 'https://www.objective.com.br/insights/node-js/',
     cover_image:
-      'https://www.objective.com.br/wp-content/uploads/2024/07/OBJECTIVE-Template-para-capas-de-artigo-2024-07-09T43546.756-2048x1030.jpg',
+      'https://www.objective.com.br/wp-content/uploads/2024/07/OBJECTIVE-Template-para-capas-de-artigo-2024-07-09T143546.756-2048x1030.jpg',
     reading_time_minutes: 4,
     tag_list: ['Node.js', 'Concepts', 'Senior Topic'],
     id: Number(crypto.randomUUID()),

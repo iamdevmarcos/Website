@@ -18,14 +18,20 @@ const Introduction = () => (
       <Flex flexDir="column" gap={5} color="white">
         <Text fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
           {
-            'I’m a 24-year-old Software Engineer specializing in building high-performance web applications, APIs, and mobile apps using TypeScript, React, Node.js, Java, Spring Boot, AWS, Azure DevOps, and Mobile (React Native, Swift).'
+            'I’m a 24-year-old software engineer with a focus on building high-performance web applications and APIs. I specialize in TypeScript, React, NodeJS, Java, Spring Boot, Jest, Cypress, AWS, Azure DevOps, Solid, Patterns.'
           }
         </Text>
 
         <Text fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
-          I enjoy writing about technology and contributing to open-source
-          projects, always eager to learn and share knowledge within the tech
-          community.
+          I utilize Clean Architecture, SOLID principles, TDD, and DDD to
+          deliver scalable and maintainable systems that balance performance,
+          usability, and reliability.
+        </Text>
+
+        <Text fontSize={{ base: '1.5rem', sm: '1.75rem' }}>
+          Passionate about continuous learning, I enjoy contributing to
+          open-source projects and writing about technology, always eager to
+          embrace new challenges and collaborate within the tech community.
         </Text>
 
         <Flex

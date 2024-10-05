@@ -105,12 +105,11 @@ const AboutMe = () => (
 export default AboutMe
 
 const paragraphs = [
-  "I'm a software engineer, and I have a passion for unraveling how things work. My focus is on technologies like TypeScript, React, Node.js, Java, Spring Boot, AWS, Azure DevOps, and Mobile (React Native, Swift).",
-  'I love delving into the inner workings of applications, combining my love for writing code with an insatiable curiosity about the underlying mechanics of these technologies. My experience in these fields makes me a valuable asset to any development team.',
-  'I have the ability to translate complex concepts into practical and effective solutions. My problem-solving approach is rooted in continuous learning, which allows me to tackle development challenges with confidence and innovation.',
-  'I’m a creative developer with a passion for good design and intuitive, user-friendly interfaces. I love working on the front end, whether that’s creating beautiful and performant mobile apps or using React and TypeScript to create interactive and responsive web apps.',
-  'I’m a great team player and communicator, I love challenges and problem-solving, thinking analytically, and valuing code quality and user experience.',
-  'Usability and design are always on my mind, even when writing code: this should be usable, readable, and beautiful too.',
-  'Creating and developing applications that are not only beautiful, but pleasant to use and really problem-solving.',
+  'I’m a software engineer with a passion for understanding how things work and building intuitive, high-performance web applications, mobile apps, and backend services.',
+  'My expertise covers technologies such as TypeScript, React, Node.js, Java, Spring Boot, AWS, Azure DevOps, React Native, and Swift. I enjoy diving into the inner workings of these technologies to create practical, scalable solutions that solve real-world problems.',
+  'I implement Clean Architecture, SOLID principles, and Design Patterns to ensure well-structured, maintainable systems that are easy to scale. Whether working on the frontend or backend, I always strive to balance performance, usability, and flexibility in every project.',
+  'With a strong focus on frontend development, I specialize in crafting responsive, user-centric interfaces that prioritize both design and performance. On the backend, my experience with APIs and microservices allows me to develop robust, scalable systems that seamlessly integrate across platforms.',
+  'I take pride in writing clean, maintainable code and ensuring an exceptional user experience. My problem-solving approach is rooted in continuous learning and a passion for innovative solutions that deliver the best results for businesses and users alike.',
+  'Driven by curiosity and a desire for constant improvement, I’m always eager to embrace new challenges and technologies that push me to grow both personally and professionally.',
   'My hobbies are reading, running, and playing on my PlayStation 5.'
 ]
