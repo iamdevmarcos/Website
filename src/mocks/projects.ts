@@ -2,6 +2,42 @@ import type { ProjectProps } from 'components/Project'
 
 export const personalProjects: ProjectProps[] = [
   {
+    name: 'rust-http-server',
+    description:
+      'Rust http server using Warp. Modular structure for easy scalability and configuration.',
+    githubLink: 'https://github.com/iamdevmarcos/rust-http-server'
+  },
+  {
+    name: 'rust-pendulum',
+    description:
+      'Pendulum simulation using Rust and Speedy2D, featuring real-time physics with adjustable parameters and dual pendulum rendering.',
+    githubLink: 'https://github.com/iamdevmarcos/rust-pendulum'
+  },
+  {
+    name: 'whisper-llm',
+    description:
+      'Interactive voice assistant using Whisper for transcription and GPT-3.5 for natural language responses.',
+    githubLink: 'https://github.com/iamdevmarcos/whisper-llm'
+  },
+  {
+    name: 'Subscription Hub',
+    description:
+      'Manage and track service subscriptions with a Next.js 14 and Tailwind CSS app, with SOLID principles for clean code.',
+    githubLink: 'https://github.com/iamdevmarcos/subscription-hub'
+  },
+  {
+    name: 'react-native-boilerplate',
+    description:
+      '🔥 A React-Native starter kit using Expo, React Navigation, Styled Components, TypeScript and Eslint.',
+    githubLink: 'https://github.com/iamdevmarcos/react-native-boilerplate'
+  },
+  {
+    name: 'Url Shortener Service',
+    description:
+      'Scalable URL shortener service using NestJS, MongoDB, Redis, and DDD principles. Features such shortening, redirection, caching.',
+    githubLink: 'https://github.com/iamdevmarcos/url-shortener-service'
+  },
+  {
     name: 'Next.js Boilerplate',
     description:
       'A simple project starter to work with TypeScript, React, NextJS and Styled Components',
@@ -21,19 +57,6 @@ export const personalProjects: ProjectProps[] = [
       'A React Hook utility for identifying and working with screen sizes',
     githubLink: 'https://github.com/iamdevmarcos/screen-size-helper',
     npmLink: 'https://www.npmjs.com/package/react-screen-size-helper'
-  },
-  {
-    name: 'MyLinks',
-    description:
-      'A simple website to organize my links, fully inspired in Linktree',
-    githubLink: 'https://github.com/iamdevmarcos/MyLinks',
-    previewLink: 'https://linktree-iamdevmarcos.vercel.app/'
-  },
-  {
-    name: 'iOS Projects 👨🏻‍💻',
-    description:
-      'A Simple repo that contains a list of my all iOS Apps and Projects',
-    githubLink: 'https://github.com/iamdevmarcos/iOSApps'
   },
   {
     name: 'MyNotes - Android App',
