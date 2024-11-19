@@ -2,7 +2,6 @@ import {
   BlogPosts,
   ContributedProjects,
   Introduction,
-  Jobs,
   PersonalProjects,
   Videos
 } from 'sections'
@@ -22,7 +21,7 @@ export default function Home({ videos }: HomeProps) {
   return (
     <Layout>
       <Introduction />
-      <Jobs />
+      {/* <Jobs /> */}
       <Videos videos={videos} />
       <BlogPosts />
       <PersonalProjects />
