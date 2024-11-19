@@ -1,12 +1,11 @@
-import { SiMinutemailer } from 'react-icons/si'
-import ConfettiExplosion from 'react-confetti-explosion'
+import { Flex, Link, Text, keyframes } from '@chakra-ui/react'
 
-import { Flex, Link, Text, Icon } from '@chakra-ui/react'
-import { useState } from 'react'
+const scrollText = keyframes`
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+`
 
 const CTA = () => {
-  const [isExploding, setIsExploding] = useState(false)
-
   return (
     <Flex
       alignItems="center"
@@ -15,26 +14,26 @@ const CTA = () => {
       color="#101828"
       textTransform="uppercase"
       h="3.8rem"
+      overflow="hidden"
+      position="relative"
+      whiteSpace="nowrap"
     >
-      {isExploding && <ConfettiExplosion />}
-
       <Link
-        onClick={() => setIsExploding(true)}
-        href="https://cal.com/marcosmendes/30min?user=marcosmendes"
+        href="https://www.producthunt.com/posts/focusly-2"
         isExternal
         _hover={{ textDecor: 'none', opacity: 0.6 }}
         display="flex"
         alignItems="center"
-        justifyContent="center"
         gap={2}
-        textAlign="center"
         fontWeight="semibold"
         fontSize={{ base: '0.8rem', md: '1.2rem' }}
+        animation={`${scrollText} 12s linear infinite`}
+        minW="50vw"
       >
-        <Text letterSpacing="-0.8px">
-          let’s bring your project to the real world - or hire me
+        <Text letterSpacing="-0.8px" whiteSpace="nowrap">
+          🎉 Boost Productivity with Focusly! – Try It Now (It’s FREE and Always
+          Will Be!) 🥳
         </Text>
-        <Icon as={SiMinutemailer} display={{ base: 'none', md: 'block' }} />
       </Link>
     </Flex>
   )
