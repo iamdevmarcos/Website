@@ -19,7 +19,7 @@ const CTA = () => {
       whiteSpace="nowrap"
     >
       <Link
-        href="https://www.producthunt.com/posts/focusly-2"
+        href="https://www.producthunt.com/products/focusly-get-things-done-as-planned"
         isExternal
         _hover={{ textDecor: 'none', opacity: 0.6 }}
         display="flex"
